@@ -1,0 +1,843 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"492 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"11 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/hardware.c
+[v _iniHardware iniHardware `(v  1 e 1 0 ]
+"103
+[v _iniTimer1 iniTimer1 `(v  1 e 1 0 ]
+"114
+[v _iniUart iniUart `(v  1 e 1 0 ]
+"131
+[v _INT0_init INT0_init `(v  1 e 1 0 ]
+"139
+[v _liga_PWM2 liga_PWM2 `(v  1 e 1 0 ]
+"160
+[v _obtemConvercaoAD obtemConvercaoAD `(ui  1 e 2 0 ]
+"183
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"191
+[v _delay_us delay_us `(v  1 e 1 0 ]
+"136 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/main.c
+[v _trataInterrupcao trataInterrupcao `II(v  1 e 1 0 ]
+"175
+[v _main main `(v  1 e 1 0 ]
+"238
+[v _executaTesteDosSensores executaTesteDosSensores `(v  1 e 1 0 ]
+"250
+[v _atualizaPainelDeLed atualizaPainelDeLed `(v  1 e 1 0 ]
+"261
+[v _ligaModuloBoost ligaModuloBoost `(v  1 e 1 0 ]
+"265
+[v _desligaModuloBoost desligaModuloBoost `(v  1 e 1 0 ]
+"269
+[v _setaSaidaEm9Volts setaSaidaEm9Volts `(v  1 e 1 0 ]
+"274
+[v _setaSaidaEm20Volts setaSaidaEm20Volts `(v  1 e 1 0 ]
+"291
+[v _testaSaidaPulsadaEm9Volts testaSaidaPulsadaEm9Volts `(v  1 e 1 0 ]
+"337
+[v _testaSaidaPulsadaEm20Volts testaSaidaPulsadaEm20Volts `(v  1 e 1 0 ]
+"385
+[v _obtemQuantidadeDeSensores obtemQuantidadeDeSensores `(v  1 e 1 0 ]
+"557
+[v _obtemNivelDeBateria obtemNivelDeBateria `(v  1 e 1 0 ]
+"587
+[v _ligaLEDVermelhoBateria ligaLEDVermelhoBateria `(v  1 e 1 0 ]
+"591
+[v _ligaLEDVerdeBateria ligaLEDVerdeBateria `(v  1 e 1 0 ]
+"596
+[v _obtemTesteDoGoundBolt obtemTesteDoGoundBolt `(v  1 e 1 0 ]
+"633
+[v _exibeQuantidadeDeSensores exibeQuantidadeDeSensores `(v  1 e 1 0 ]
+"694
+[v _exibeNumero0 exibeNumero0 `(v  1 e 1 0 ]
+"704
+[v _exibeNumero1 exibeNumero1 `(v  1 e 1 0 ]
+"714
+[v _exibeNumero2 exibeNumero2 `(v  1 e 1 0 ]
+"724
+[v _exibeNumero3 exibeNumero3 `(v  1 e 1 0 ]
+"734
+[v _exibeNumero4 exibeNumero4 `(v  1 e 1 0 ]
+"744
+[v _exibeNumero5 exibeNumero5 `(v  1 e 1 0 ]
+"754
+[v _exibeNumero6 exibeNumero6 `(v  1 e 1 0 ]
+"764
+[v _exibeNumero7 exibeNumero7 `(v  1 e 1 0 ]
+"774
+[v _exibeNumero8 exibeNumero8 `(v  1 e 1 0 ]
+"784
+[v _exibeNumero9 exibeNumero9 `(v  1 e 1 0 ]
+"794
+[v _exibeNumeroA exibeNumeroA `(v  1 e 1 0 ]
+"854
+[v _exibeNumeroNenhum exibeNumeroNenhum `(v  1 e 1 0 ]
+"865
+[v _exibeNumeroP exibeNumeroP `(v  1 e 1 0 ]
+"876
+[v _giraDisplay giraDisplay `(v  1 e 1 0 ]
+"908
+[v _inicializaDisplay inicializaDisplay `(v  1 e 1 0 ]
+"918
+[v _ligaPainelLed ligaPainelLed `(v  1 e 1 0 ]
+"928
+[v _desligaPainelLed desligaPainelLed `(v  1 e 1 0 ]
+"938
+[v _trataEntradaPulsada trataEntradaPulsada `(v  1 e 1 0 ]
+"980
+[v _operacoesEmTick operacoesEmTick `(v  1 e 1 0 ]
+"999
+[v _checaBotaoAjustes checaBotaoAjustes `(uc  1 e 1 0 ]
+"1012
+[v _entraEmModoAjuste entraEmModoAjuste `(v  1 e 1 0 ]
+"1038
+[v _modoTeste9 modoTeste9 `(v  1 e 1 0 ]
+"1081
+[v _modoTeste20 modoTeste20 `(v  1 e 1 0 ]
+"97 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/serial_usart.c
+[v _enviaStringPelaUart enviaStringPelaUart `(v  1 e 1 0 ]
+[s S728 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"293 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f877A.h
+[u S737 . 1 `S728 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES737  1 e 1 @7 ]
+[s S246 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"475
+[s S255 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S260 . 1 `S246 1 . 1 0 `S255 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES260  1 e 1 @11 ]
+[s S570 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"547
+[u S579 . 1 `S570 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES579  1 e 1 @12 ]
+[s S190 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+]
+"678
+[s S196 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S202 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1INSYNC 1 0 :1:2 
+]
+[u S205 . 1 `S190 1 . 1 0 `S196 1 . 1 0 `S202 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES205  1 e 1 @16 ]
+[s S389 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"756
+[s S393 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S401 . 1 `S389 1 . 1 0 `S393 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES401  1 e 1 @18 ]
+[s S316 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"992
+[s S325 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S329 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S332 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S335 . 1 `S316 1 . 1 0 `S325 1 . 1 0 `S329 1 . 1 0 `S332 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES335  1 e 1 @24 ]
+"1057
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1064
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1078
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @27 ]
+"1092
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @29 ]
+[s S418 . 1 `uc 1 CCP2M 1 0 :4:0 
+`uc 1 CCP2Y 1 0 :1:4 
+`uc 1 CCP2X 1 0 :1:5 
+]
+"1110
+[s S422 . 1 `uc 1 CCP2M0 1 0 :1:0 
+`uc 1 CCP2M1 1 0 :1:1 
+`uc 1 CCP2M2 1 0 :1:2 
+`uc 1 CCP2M3 1 0 :1:3 
+]
+[u S427 . 1 `S418 1 . 1 0 `S422 1 . 1 0 ]
+[v _CCP2CONbits CCP2CONbits `VES427  1 e 1 @29 ]
+"1150
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S144 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 GO_nDONE 1 0 :1:2 
+`uc 1 CHS 1 0 :3:3 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1188
+[s S150 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO 1 0 :1:2 
+`uc 1 CHS0 1 0 :1:3 
+`uc 1 CHS1 1 0 :1:4 
+`uc 1 CHS2 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S158 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nDONE 1 0 :1:2 
+]
+[s S161 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO_DONE 1 0 :1:2 
+]
+[u S164 . 1 `S144 1 . 1 0 `S150 1 . 1 0 `S158 1 . 1 0 `S161 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES164  1 e 1 @31 ]
+[s S360 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1273
+[s S367 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S371 . 1 `S360 1 . 1 0 `S367 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES371  1 e 1 @129 ]
+[s S19 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1338
+[u S26 . 1 `S19 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES26  1 e 1 @133 ]
+[s S36 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1390
+[u S45 . 1 `S36 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES45  1 e 1 @134 ]
+[s S57 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1452
+[u S66 . 1 `S57 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES66  1 e 1 @135 ]
+[s S78 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1514
+[u S87 . 1 `S78 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES87  1 e 1 @136 ]
+[s S99 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+"1576
+[u S108 . 1 `S99 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES108  1 e 1 @137 ]
+[s S225 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"1633
+[u S234 . 1 `S225 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES234  1 e 1 @140 ]
+"1814
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+[s S278 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2023
+[s S287 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S291 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S294 . 1 `S278 1 . 1 0 `S287 1 . 1 0 `S291 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES294  1 e 1 @152 ]
+"2078
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2220
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S120 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADCS2 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2246
+[s S125 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+]
+[u S130 . 1 `S120 1 . 1 0 `S125 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES130  1 e 1 @159 ]
+"2286
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"2293
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"2314
+[v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
+"2359
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"2409
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"2501
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2573
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2575
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"2577
+[v _RB3 RB3 `VEb  1 e 0 @51 ]
+"2579
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"2581
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"2583
+[v _RB6 RB6 `VEb  1 e 0 @54 ]
+"2585
+[v _RB7 RB7 `VEb  1 e 0 @55 ]
+"2595
+[v _RC2 RC2 `VEb  1 e 0 @58 ]
+"2597
+[v _RC3 RC3 `VEb  1 e 0 @59 ]
+"2599
+[v _RC4 RC4 `VEb  1 e 0 @60 ]
+"2601
+[v _RC5 RC5 `VEb  1 e 0 @61 ]
+"2615
+[v _RCIE RCIE `VEb  1 e 0 @1125 ]
+"2617
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2619
+[v _RD RD `VEb  1 e 0 @3168 ]
+"2621
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2623
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2625
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2627
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2629
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2631
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2633
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"2635
+[v _RD7 RD7 `VEb  1 e 0 @71 ]
+"2723
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"2799
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"2811
+[v _TXIE TXIE `VEb  1 e 0 @1124 ]
+"2813
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"2819
+[v _WR WR `VEb  1 e 0 @3169 ]
+"2821
+[v _WREN WREN `VEb  1 e 0 @3170 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"61 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/main.c
+[v _numeroDeSensores numeroDeSensores `uc  1 e 1 0 ]
+"62
+[v _flagErroDeLeitura flagErroDeLeitura `uc  1 e 1 0 ]
+"63
+[v _pulsosSemResposta pulsosSemResposta `ui  1 e 2 0 ]
+"64
+[v _numeroDePulsos numeroDePulsos `ui  1 e 2 0 ]
+"65
+[v _respostaOk respostaOk `uc  1 e 1 0 ]
+"66
+[v _falhaPulsoDeEntrada falhaPulsoDeEntrada `uc  1 e 1 0 ]
+"67
+[v _flagNivelDeBateria flagNivelDeBateria `uc  1 e 1 0 ]
+"69
+[v _tensaoDeSaida tensaoDeSaida `uc  1 e 1 0 ]
+"70
+[v _flagErrroDeAmplitude flagErrroDeAmplitude `uc  1 e 1 0 ]
+"75
+[v _estadoDoSinal estadoDoSinal `uc  1 e 1 0 ]
+"78
+[v _tempoDeReacaoDoSensor tempoDeReacaoDoSensor `ui  1 e 2 0 ]
+"79
+[v _flagTempoDeReacaoDoSensor flagTempoDeReacaoDoSensor `uc  1 e 1 0 ]
+"175
+[v _main main `(v  1 e 1 0 ]
+{
+"224
+[v main@mensagem mensagem `[50]uc  1 a 50 0 ]
+"234
+} 0
+"596
+[v _obtemTesteDoGoundBolt obtemTesteDoGoundBolt `(v  1 e 1 0 ]
+{
+"598
+[v obtemTesteDoGoundBolt@mensagem mensagem `[50]uc  1 a 50 0 ]
+"597
+[v obtemTesteDoGoundBolt@resultadoDoTesteDoGB resultadoDoTesteDoGB `ui  1 a 2 50 ]
+"630
+} 0
+"557
+[v _obtemNivelDeBateria obtemNivelDeBateria `(v  1 e 1 0 ]
+{
+"560
+[v obtemNivelDeBateria@mensagem mensagem `[50]uc  1 a 50 0 ]
+"559
+[v obtemNivelDeBateria@nivelDaBateria nivelDaBateria `ui  1 a 2 50 ]
+"585
+} 0
+"587
+[v _ligaLEDVermelhoBateria ligaLEDVermelhoBateria `(v  1 e 1 0 ]
+{
+"589
+} 0
+"591
+[v _ligaLEDVerdeBateria ligaLEDVerdeBateria `(v  1 e 1 0 ]
+{
+"593
+} 0
+"139 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/hardware.c
+[v _liga_PWM2 liga_PWM2 `(v  1 e 1 0 ]
+{
+[v liga_PWM2@freq_pwm freq_pwm `uc  1 a 1 wreg ]
+"140
+[v liga_PWM2@dutyCycle dutyCycle `uc  1 a 1 3 ]
+"141
+[v liga_PWM2@freqPWM freqPWM `uc  1 a 1 1 ]
+"139
+[v liga_PWM2@freq_pwm freq_pwm `uc  1 a 1 wreg ]
+[v liga_PWM2@freq_pwm freq_pwm `uc  1 a 1 2 ]
+"151
+} 0
+"908 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/main.c
+[v _inicializaDisplay inicializaDisplay `(v  1 e 1 0 ]
+{
+"916
+} 0
+"918
+[v _ligaPainelLed ligaPainelLed `(v  1 e 1 0 ]
+{
+"926
+} 0
+"854
+[v _exibeNumeroNenhum exibeNumeroNenhum `(v  1 e 1 0 ]
+{
+"863
+} 0
+"928
+[v _desligaPainelLed desligaPainelLed `(v  1 e 1 0 ]
+{
+"936
+} 0
+"114 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/hardware.c
+[v _iniUart iniUart `(v  1 e 1 0 ]
+{
+"129
+} 0
+"103
+[v _iniTimer1 iniTimer1 `(v  1 e 1 0 ]
+{
+"112
+} 0
+"11
+[v _iniHardware iniHardware `(v  1 e 1 0 ]
+{
+"92
+} 0
+"876 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/main.c
+[v _giraDisplay giraDisplay `(v  1 e 1 0 ]
+{
+"905
+} 0
+"865
+[v _exibeNumeroP exibeNumeroP `(v  1 e 1 0 ]
+{
+"874
+} 0
+"238
+[v _executaTesteDosSensores executaTesteDosSensores `(v  1 e 1 0 ]
+{
+"248
+} 0
+"291
+[v _testaSaidaPulsadaEm9Volts testaSaidaPulsadaEm9Volts `(v  1 e 1 0 ]
+{
+"335
+} 0
+"337
+[v _testaSaidaPulsadaEm20Volts testaSaidaPulsadaEm20Volts `(v  1 e 1 0 ]
+{
+"382
+} 0
+"250
+[v _atualizaPainelDeLed atualizaPainelDeLed `(v  1 e 1 0 ]
+{
+"258
+} 0
+"1012
+[v _entraEmModoAjuste entraEmModoAjuste `(v  1 e 1 0 ]
+{
+"1036
+} 0
+"1038
+[v _modoTeste9 modoTeste9 `(v  1 e 1 0 ]
+{
+"1079
+} 0
+"269
+[v _setaSaidaEm9Volts setaSaidaEm9Volts `(v  1 e 1 0 ]
+{
+"272
+} 0
+"1081
+[v _modoTeste20 modoTeste20 `(v  1 e 1 0 ]
+{
+"1121
+} 0
+"274
+[v _setaSaidaEm20Volts setaSaidaEm20Volts `(v  1 e 1 0 ]
+{
+"277
+} 0
+"385
+[v _obtemQuantidadeDeSensores obtemQuantidadeDeSensores `(v  1 e 1 0 ]
+{
+"387
+[v obtemQuantidadeDeSensores@mensagem mensagem `[50]uc  1 a 50 0 ]
+"386
+[v obtemQuantidadeDeSensores@resultadoObtidoDoSensores resultadoObtidoDoSensores `ui  1 a 2 50 ]
+"473
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"6
+[v strlen@cp cp `*.39DCuc  1 a 2 4 ]
+"4
+[v strlen@s s `*.39DCuc  1 p 2 0 ]
+"13
+} 0
+"492 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+"501
+[v sprintf@width width `i  1 a 2 27 ]
+"528
+[v sprintf@val val `ui  1 a 2 24 ]
+"499
+[v sprintf@c c `c  1 a 1 29 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 26 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 23 ]
+"506
+[v sprintf@prec prec `c  1 a 1 22 ]
+"492
+[v sprintf@sp sp `*.39uc  1 p 2 14 ]
+[v sprintf@f f `*.24DCuc  1 p 1 16 ]
+"1541
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 6 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"31
+} 0
+"160 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/hardware.c
+[v _obtemConvercaoAD obtemConvercaoAD `(ui  1 e 2 0 ]
+{
+[v obtemConvercaoAD@canal canal `uc  1 a 1 wreg ]
+"161
+[v obtemConvercaoAD@valor valor `ui  1 a 2 13 ]
+"160
+[v obtemConvercaoAD@canal canal `uc  1 a 1 wreg ]
+"164
+[v obtemConvercaoAD@canal canal `uc  1 a 1 12 ]
+"179
+} 0
+"191
+[v _delay_us delay_us `(v  1 e 1 0 ]
+{
+"192
+[v delay_us@contador contador `ui  1 a 2 2 ]
+"191
+[v delay_us@valor valor `ui  1 p 2 0 ]
+"197
+} 0
+"97 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/serial_usart.c
+[v _enviaStringPelaUart enviaStringPelaUart `(v  1 e 1 0 ]
+{
+"98
+[v enviaStringPelaUart@vetor vetor `i  1 a 2 13 ]
+"97
+[v enviaStringPelaUart@str str `*.39uc  1 p 2 6 ]
+[v enviaStringPelaUart@tamanho tamanho `i  1 p 2 8 ]
+"106
+} 0
+"633 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/main.c
+[v _exibeQuantidadeDeSensores exibeQuantidadeDeSensores `(v  1 e 1 0 ]
+{
+[v exibeQuantidadeDeSensores@quantidade quantidade `uc  1 a 1 wreg ]
+[v exibeQuantidadeDeSensores@quantidade quantidade `uc  1 a 1 wreg ]
+[v exibeQuantidadeDeSensores@quantidade quantidade `uc  1 a 1 0 ]
+"676
+} 0
+"794
+[v _exibeNumeroA exibeNumeroA `(v  1 e 1 0 ]
+{
+"802
+} 0
+"784
+[v _exibeNumero9 exibeNumero9 `(v  1 e 1 0 ]
+{
+"792
+} 0
+"774
+[v _exibeNumero8 exibeNumero8 `(v  1 e 1 0 ]
+{
+"782
+} 0
+"764
+[v _exibeNumero7 exibeNumero7 `(v  1 e 1 0 ]
+{
+"772
+} 0
+"754
+[v _exibeNumero6 exibeNumero6 `(v  1 e 1 0 ]
+{
+"762
+} 0
+"744
+[v _exibeNumero5 exibeNumero5 `(v  1 e 1 0 ]
+{
+"752
+} 0
+"734
+[v _exibeNumero4 exibeNumero4 `(v  1 e 1 0 ]
+{
+"742
+} 0
+"724
+[v _exibeNumero3 exibeNumero3 `(v  1 e 1 0 ]
+{
+"732
+} 0
+"714
+[v _exibeNumero2 exibeNumero2 `(v  1 e 1 0 ]
+{
+"722
+} 0
+"704
+[v _exibeNumero1 exibeNumero1 `(v  1 e 1 0 ]
+{
+"712
+} 0
+"694
+[v _exibeNumero0 exibeNumero0 `(v  1 e 1 0 ]
+{
+"702
+} 0
+"183 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/hardware.c
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+"184
+[v delay_ms@contador contador `ui  1 a 2 4 ]
+"183
+[v delay_ms@valor valor `ui  1 p 2 0 ]
+"189
+} 0
+"261 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/main.c
+[v _ligaModuloBoost ligaModuloBoost `(v  1 e 1 0 ]
+{
+"263
+} 0
+"265
+[v _desligaModuloBoost desligaModuloBoost `(v  1 e 1 0 ]
+{
+"267
+} 0
+"999
+[v _checaBotaoAjustes checaBotaoAjustes `(uc  1 e 1 0 ]
+{
+"1000
+[v checaBotaoAjustes@contador contador `ui  1 a 2 0 ]
+"1010
+} 0
+"131 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/hardware.c
+[v _INT0_init INT0_init `(v  1 e 1 0 ]
+{
+"136
+} 0
+"136 D:\Documents\_PROJETOS\_TECPROTON\SMART PLUG\FIRMWARE\SmartPlugTP.X\src/main.c
+[v _trataInterrupcao trataInterrupcao `II(v  1 e 1 0 ]
+{
+"151
+} 0
+"938
+[v _trataEntradaPulsada trataEntradaPulsada `(v  1 e 1 0 ]
+{
+"939
+[v trataEntradaPulsada@amplitude amplitude `ui  1 a 2 0 ]
+"975
+} 0
+"980
+[v _operacoesEmTick operacoesEmTick `(v  1 e 1 0 ]
+{
+"981
+[v operacoesEmTick@contadorDe100ms contadorDe100ms `i  1 s 2 contadorDe100ms ]
+"982
+[v operacoesEmTick@contadorDe1s contadorDe1s `i  1 s 2 contadorDe1s ]
+"996
+} 0
